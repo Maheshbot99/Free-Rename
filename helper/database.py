@@ -1,5 +1,5 @@
 import motor.motor_asyncio
-from config import DB_URL, DB_NAME
+from config import DATABASE_URL, DATABASE_NAME
 
 class Database:
 
@@ -49,4 +49,4 @@ class Database:
         return user.get('caption', None)
 
 
-db = Database(DB_URL, DB_NAME)
+db = Database(DATABASE_URL, DATABASE_NAME)
