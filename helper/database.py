@@ -49,4 +49,4 @@ class Database:
         return user.get('caption', None)
 
 
-db = Database(DATABASE_URL, DATABASE_NAME)
+db = Database(DB_URL, DB_NAME)
