@@ -33,18 +33,16 @@ class mr(object):
 ┣⪼ ⏱️ : {4}
 ╰━━━━━━━━━━━━━━━➣ """
 
-    ABOUT_TXT = """
+    ABOUT_TXT = """**
 ╭───────────⍟
-├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/MaHi_458>𝗠𝗔𝗛𝗘𝗦𝗛.𝗦</a> 
-├👨‍💻 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v3.6.8 [ 𝙼𝙰𝙹𝙾𝚁 ]              
+├🤖 ᴍy ɴᴀᴍᴇ : {}
+├👑 ᴏᴡɴᴇʀ : <a href=https://t.me/CrazyXBoTsbot>ᴄʀᴀᴢy x ʙᴏᴛꜱ</a> 
+├👨‍💻 ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+├📕 ᴍᴏᴠɪᴇꜱ : <a href=https://t.me/Cinema_Rockets>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ : <a href=https://www.mongodb.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+├📊 ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v3.6.8 [ ᴍᴀᴊᴏʀ ]              
 ╰───────────────⍟
-                                """
+                                **"""
     HELP_TXT = """
 🌌 <b><u>HOW TO SET THUMBNILE</u></b>
   
