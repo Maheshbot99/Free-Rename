@@ -34,14 +34,14 @@ class mr(object):
 ╰━━━━━━━━━━━━━━━➣ """
 
     ABOUT_TXT = """
-╭───────────⍟
-├🤖 ᴍy ɴᴀᴍᴇ : {}
-├👑 ᴏᴡɴᴇʀ : <a href=https://t.me/CrazyXBoTsbot>ᴄʀᴀᴢy x ʙᴏᴛꜱ</a> 
-├👨‍💻 ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-├📕 ᴍᴏᴠɪᴇꜱ : <a href=https://t.me/Cinema_Rockets>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ : <a href=https://www.mongodb.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-├📊 ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v3.6.8 [ ᴍᴀᴊᴏʀ ]              
-╰───────────────⍟
+**╭───────────⍟**
+**├🤖 ᴍy ɴᴀᴍᴇ : {}**
+**├👑 ᴏᴡɴᴇʀ : <a href=https://t.me/CrazyXBoTsbot>ᴄʀᴀᴢy x ʙᴏᴛꜱ</a>**
+**├👨‍💻 ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>**
+**├📕 ᴍᴏᴠɪᴇꜱ : <a href=https://t.me/Cinema_Rockets>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>**
+**├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ : <a href=https://www.mongodb.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>**
+**├📊 ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v3.6.8**              
+**╰───────────────⍟**
                                 """
     HELP_TXT = """
 **📚 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ :**
