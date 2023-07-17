@@ -72,7 +72,7 @@ async def doc(bot,update):
          img = Image.open(ph_path)
          img.resize((320, 320))
          img.save(ph_path, "JPEG")
-     await ms.edit("𝚃𝚁𝚈𝙸𝙽𝙶 𝚃𝙾 𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶....")
+     await ms.edit("**__ᴛʀyɪɴɢ ᴛᴏ ᴜᴩʟᴏᴀᴅɪɴɢ....__**")
      c_time = time.time() 
      try:
         if type == "document":
