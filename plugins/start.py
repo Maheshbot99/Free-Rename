@@ -96,8 +96,6 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/CrazyXBoTs")
-               ],[
                InlineKeyboardButton("ꜱᴇᴛᴛɪɴɢꜱ", callback_data = "settings")
                ],[
                InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
@@ -113,8 +111,6 @@ async def cb_handler(client, query: CallbackQuery):
                #⚠️ don't change source code & source link ⚠️ #
                InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/CrazyXBoTs")
                ],[
-               InlineKeyboardButton("ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Cinema_Rockets")
-               ],[
                InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
                ]]
@@ -126,8 +122,6 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
                InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/CrazyXBoTs")
-               ],[
-               InlineKeyboardButton("ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Cinema_Rockets")
                ],[
                InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
