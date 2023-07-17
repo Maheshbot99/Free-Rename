@@ -44,32 +44,20 @@ class mr(object):
 ╰───────────────⍟
                                 **"""
     HELP_TXT = """
-🌌 <b><u>HOW TO SET THUMBNILE</u></b>
-  
-•> /start a bot and send any picture to automatically set thumbnile.
-•> /delthumb use this command and delete your old thumbnile.
-•> /viewthumb use this command view your current thumbnile. \n
-📑 <b><u>HOW TO SET CUSTOM CAPTION</u></b>
-•> /set_caption - set a custom caption
-•> /see_caption - see your custom caption
-•> /del_caption - delete custom caption
-Example:- /set_caption 📕 File Name: {filename}
-💾 Size: {filesize}
-⏰ Duration: {duration} \n
-✏️ <b><u>HOW TO RENAME A FILE</u></b>
-•> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
-ℹ️  𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MaHi_458>𝗠𝗔𝗛𝗘𝗦𝗛.𝗦</a>
+**📚 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ :**
+
+**/start - ʙᴏᴛ ᴀʟɪᴠᴇ ᴄʜᴇᴋɪɴɢ..**
+**/viewthumb - ᴛᴏ ᴠɪᴇᴡ ᴛʜᴜᴍʙɴᴀɪʟ**
+**/delthumb - ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴛʜᴜᴍʙɴᴀɪʟ**
+**/set_caption - ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
+**/see_caption - ꜱᴇᴇ yᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
+**/del_caption - ᴅᴇʟᴇᴛᴇ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
+• ᴄᴏɴᴛᴀᴄᴛ :- <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 """
 
 #⚠️ don't remove our credits 🙏😢😢
     DEV_TXT = """
-<b><u>Special Thanks & Developers</b></u> \n
-» 𝗢𝗪𝗡𝗘𝗥 : <a href=https://t.me/MaHi_458>𝗠𝗔𝗛𝗘𝗦𝗛.𝗦</a>
-» 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 : <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
-• ❣️ <a href=https://t.me/Cinema_Rockets>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
+<b><u>ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ & ᴅᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u> \n
+» ᴄᴏɴᴛᴀᴄᴛ : <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+» ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 """
