@@ -11,8 +11,7 @@ async def upgrade(bot,update):
 **⦿ /viewthumb - ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ꜱᴇᴇ yᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ**
 **⦿ /delthumb - ᴜꜱᴇ ᴛʜɪꜱ ᴄᴀᴍᴍᴏɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ yᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ**"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("💳 ᴜᴩɢʀᴀᴅᴇ",callback_data = "upgrade")], 
-        			[InlineKeyboardButton("• ʙᴀᴄᴋ •",callback_data = "settings")  ]])
+        			InlineKeyboardButton("• ʙᴀᴄᴋ •",callback_data = "settings")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -25,6 +24,5 @@ async def upgradecm(bot,message):
 **⦿ /viewthumb - ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ꜱᴇᴇ yᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ**
 **⦿ /delthumb - ᴜꜱᴇ ᴛʜɪꜱ ᴄᴀᴍᴍᴏɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ yᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ**"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("💳 ᴜᴩɢʀᴀᴅᴇ",callback_data = "upgrade")], 
-        			[InlineKeyboardButton("• ʙᴀᴄᴋ •",callback_data = "settings")  ]])
+        			InlineKeyboardButton("• ʙᴀᴄᴋ •",callback_data = "settings")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
