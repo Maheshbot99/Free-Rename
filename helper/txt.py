@@ -33,7 +33,7 @@ class mr(object):
 ┣⪼ ⏱️ : {4}
 ╰━━━━━━━━━━━━━━━➣ """
 
-    ABOUT_TXT = """**
+    ABOUT_TXT = """
 ╭───────────⍟
 ├🤖 ᴍy ɴᴀᴍᴇ : {}
 ├👑 ᴏᴡɴᴇʀ : <a href=https://t.me/CrazyXBoTsbot>ᴄʀᴀᴢy x ʙᴏᴛꜱ</a> 
@@ -42,7 +42,7 @@ class mr(object):
 ├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ : <a href=https://www.mongodb.com/>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 ├📊 ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : v3.6.8 [ ᴍᴀᴊᴏʀ ]              
 ╰───────────────⍟
-                                **"""
+                                """
     HELP_TXT = """
 **📚 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ :**
 
@@ -52,12 +52,12 @@ class mr(object):
 **/set_caption - ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
 **/see_caption - ꜱᴇᴇ yᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
 **/del_caption - ᴅᴇʟᴇᴛᴇ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴩᴛɪᴏɴ**
-• ᴄᴏɴᴛᴀᴄᴛ :- <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+• **ᴄᴏɴᴛᴀᴄᴛ :- <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>**
 """
 
 #⚠️ don't remove our credits 🙏😢😢
     DEV_TXT = """
 <b><u>ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ & ᴅᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u> \n
-» ᴄᴏɴᴛᴀᴄᴛ : <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-» ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+**» ᴄᴏɴᴛᴀᴄᴛ : <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ**</a>
+**» ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ**</a>
 """
