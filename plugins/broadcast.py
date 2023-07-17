@@ -37,15 +37,15 @@ logger.setLevel(logging.INFO)
  
 @Client.on_message(filters.command("users") & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
-    mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
+    mr = await message.reply('**ᴀᴄᴄᴇꜱꜱɪɴɢ ᴅᴇᴛᴀɪʟꜱ.....**')
     total_users = await db.total_users_count()
-    await mr.edit( text=f"❤️‍🔥 TOTAL USER'S = `{total_users}`")
+    await mr.edit( text=f"**ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ** = `{total_users}`")
 
 @Client.on_message(filters.command("broadcast") & filters.user(ADMIN) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
     all_users = await db.get_all_users()
     broadcast_msg = m.reply_to_message
-    sts_msg = await m.reply_text("broadcast started !") 
+    sts_msg = await m.reply_text("**ʙʀᴏᴀᴅᴄᴀꜱᴛ ꜱᴛᴀʀᴛᴇᴅ...!**") 
     done = 0
     failed = 0
     success = 0
