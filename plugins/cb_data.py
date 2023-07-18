@@ -43,7 +43,7 @@ async def doc(bot,update):
      dow_file_name = splitpath[1]
      old_file_name =f"downloads/{dow_file_name}"
      os.rename(old_file_name,file_path)
-     duration = 90
+     duration = 0
      try:
         metadata = extractMetadata(createParser(file_path))
         if metadata.has("duration"):
