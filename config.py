@@ -10,9 +10,9 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "5355979778:AAGaXrzxatK9ML1KrqetwM6u8O4U
 
 FORCE_SUB = os.environ.get("FORCE_SUB", "CrazyXBoTs") 
 
-DB_NAME = os.environ.get("DB_NAME","Ms")     
+DB_NAME = os.environ.get("DB_NAME","Name")     
 
-DB_URL = os.environ.get("DB_URL","mongodb+srv://Ms:Ms@cluster0.ms8iefs.mongodb.net/?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://Name:Name@cluster0.m12ofgg.mongodb.net/?retryWrites=true&w=majority")
  
 FLOOD = int(os.environ.get("FLOOD", "90"))
 
