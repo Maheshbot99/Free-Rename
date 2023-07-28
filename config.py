@@ -6,7 +6,7 @@ API_ID = os.environ.get("API_ID", "22525529")
 
 API_HASH = os.environ.get("API_HASH", "840111f82bbd1d2d3de5055afccf6a92")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6585198618:AAFJQ3QyKL9j5i1YF9OyNMNnFnvlAIvpJP4") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5355979778:AAGaXrzxatK9ML1KrqetwM6u8O4Uzw88EpA") 
 
 FORCE_SUB = os.environ.get("FORCE_SUB", "CrazyXBoTs") 
 
