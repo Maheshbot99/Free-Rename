@@ -6,9 +6,9 @@ API_ID = os.environ.get("API_ID", "22525529")
 
 API_HASH = os.environ.get("API_HASH", "840111f82bbd1d2d3de5055afccf6a92")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6028582039:AAEFsw1OW-gXg1fq74uNgzakwl-98YhCTCY") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5355979778:AAE-E9XXHb5Lefzlgdh6nDUbFDMIdEUyCVU") 
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "") 
+FORCE_SUB = os.environ.get("FORCE_SUB", "CrazyXBots") 
 
 DB_NAME = os.environ.get("DB_NAME","Name")     
 
