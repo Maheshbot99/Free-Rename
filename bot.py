@@ -5,6 +5,7 @@ from route import web_server
 
 class Bot(Client):
 
+    def __init__(self):
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -12,7 +13,8 @@ class Bot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=15,
         )
-       
+
+    async def start(self):
         await super().start()
         me = await self.get_me()
         self.mention = me.mention
