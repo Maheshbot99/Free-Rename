@@ -5,6 +5,7 @@ from route import web_server
 
 class Bot(Client):
 
+	@@ -16,31 +11,36 @@ def __init__(self):
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
