@@ -13,8 +13,8 @@ class Bot(Client):
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15,
+        )
             
-
     async def start(self):
         await super().start()
         me = await self.get_me()
