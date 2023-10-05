@@ -13,7 +13,7 @@ class Bot(Client):
             sleep_threshold=15,
         )
        
-await super().start()
+        await super().start()
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username 
