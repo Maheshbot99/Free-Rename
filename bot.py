@@ -11,9 +11,9 @@ class Bot(Client):
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15,
-
-    async def start(self):
-        await super().start()
+        )
+       
+await super().start()
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username 
