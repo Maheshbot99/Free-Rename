@@ -1,7 +1,5 @@
-from datetime import datetime
-from pytz import timezone
 from pyrogram import Client 
-from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT, LOG_CHANNEL, ADMIN
+from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT
 from aiohttp import web
 from route import web_server
 
@@ -34,23 +32,6 @@ class Bot(Client):
         bind_address = "0.0.0.0"       
         await web.TCPSite(app, bind_address, PORT).start()     
         print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
-        for id in ADMIN:
-            try: await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
-            except: pass
-        if LOG_CHANNEL:
-            try:
-                curr = datetime.now(timezone("Asia/Kolkata"))
-                date = curr.strftime('%d %B, %Y')
-                time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅 Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>")                                
-            except:
-                print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
 
-    async def stop(self, *args):
-        await super().stop()      
-        print("Bot Stopped")
-
-
-bot=Bot()
 Bot().run()
