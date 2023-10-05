@@ -21,7 +21,6 @@ Repo Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT
 License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICENSE
 """
 
-from config import Config
 from asyncio import sleep
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
@@ -135,14 +134,3 @@ async def cb_handler(client, query: CallbackQuery):
             await query.message.reply_to_message.delete()
         except:
             await query.message.delete()
-
-
-#Restart to cancell all process 
-@Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
-async def restart_bot(b, m):
-    await m.reply_text("🔄__Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
-    os.execl(sys.executable, sys.executable, *sys.argv)
-
-
-
-
