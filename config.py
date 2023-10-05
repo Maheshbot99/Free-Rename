@@ -13,7 +13,6 @@ class Config(object):
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
-    BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
