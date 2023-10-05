@@ -1,3 +1,4 @@
+from config import ADMIN
 from datetime import datetime
 from pytz import timezone
 from pyrogram import Client, __version__
@@ -30,7 +31,7 @@ class Bot(Client):
             await app.setup()       
             await web.TCPSite(app, "0.0.0.0", 8080).start()     
         print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️")
-        for id in Config.ADMIN:
+        for id in ADMIN:
             try: await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")                                
             except: pass
         if Config.LOG_CHANNEL:
