@@ -4,17 +4,16 @@ from aiohttp import web
 from route import web_server
 
 class Bot(Client):
-
-	@@ -16,31 +11,36 @@ def __init__(self):
+    def __init__(self):
+        super().__init__(
+            name="renamer",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15,
-        )
-            
-    async def start(self):
+	@@ -20,27 +23,23 @@ async def start(self):
         await super().start()
         me = await self.get_me()
         self.mention = me.mention
@@ -35,4 +34,10 @@ class Bot(Client):
         print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
 
 
-Bot().run()
+    async def stop(self, *args):
+        await super().stop()      
+        print("Bot Stopped")
+
+
+bot=Bot()
+bot.run()
