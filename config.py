@@ -21,5 +21,3 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/875bc8c833cfa79f
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5450011131').split()]
 
 PORT = os.environ.get('PORT', '8080')
-
-WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
