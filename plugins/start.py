@@ -41,8 +41,8 @@ async def start(client, message):
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton("• ᴅᴇᴠꜱ •", callback_data='dev')
         ],[
-        InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CrazyXBoTs'),
-        InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/CrazyXBoTsBot')
+        InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/Prime_SpoT'),
+        InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/Prime_SpoT')
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help')
@@ -83,8 +83,8 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("• ᴅᴇᴠꜱ •", callback_data='dev')                
                 ],[
-                InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CrazyXBoTs'),
-                InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/CrazyXBoTsBot')
+                InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/Prime_SpoT'),
+                InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/Prime_SpoT')
                 ],[
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
                 InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help')
@@ -109,7 +109,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/CrazyXBoTs")
+               InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/Prime_SpoT")
                ],[
                InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
@@ -121,7 +121,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/CrazyXBoTs")
+               InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/Prime_SpoT")
                ],[
                InlineKeyboardButton("🔒 ᴄʟᴏꜱᴇ", callback_data = "close"),
                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
