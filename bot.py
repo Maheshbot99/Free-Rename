@@ -7,9 +7,9 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             name="tg-filerenamebot",
-            api_id=Config.API_ID,
-            api_hash=Config.API_HASH,
-            bot_token=Config.BOT_TOKEN,
+            api_id=API_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15)
