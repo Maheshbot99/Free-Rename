@@ -31,9 +31,10 @@ async def doc(bot,update):
      new_name = update.message.text
      new_filename = new_name.split(":-")[1]
      file_path = f"downloads/{new_filename}"
-     file = update.message.reply_to_message
-     media = getattr(file, file.media.value)
-     ms = await update.message.edit("`ᴛʀʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ....`")    
+    file = update.message.reply_to_message
+    media = getattr(file, file.media.value)
+	
+    ms = await update.message.edit("`ᴛʀʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ....`")    
     try:
         custom_file_name = random_file_name(5)
         down_file_name = "downloads" + "/" + str(update.from_user.id) + f"{custom_file_name}" + f"{media.file_name}"
