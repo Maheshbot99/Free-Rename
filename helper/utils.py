@@ -1,5 +1,5 @@
 import math
-import time 
+import time, random, string
 from helper.txt import mr
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -67,6 +67,11 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(seconds) + "s, ") if seconds else "") + \
         ((str(milliseconds) + "ms, ") if milliseconds else "")
     return tmp[:-2] 
+
+def random_file_name(y):
+       return ''.join(random.choice(string.ascii_letters) for x in range(y))
+
+ran = (random_file_name(5))
 
 def convert(seconds):
     seconds = seconds % (24 * 3600)
