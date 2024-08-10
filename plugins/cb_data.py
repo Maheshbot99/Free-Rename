@@ -68,7 +68,7 @@ async def doc(bot,update):
           except Exception as e:
               await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
               return 
-      else:
+       else:
          caption = f"**{new_filename}**"
      if (media.thumbs or c_thumb):
          if c_thumb:
