@@ -34,39 +34,39 @@ async def doc(bot,update):
      file = update.message.reply_to_message
      media = getattr(file, file.media.value)
 	
-    ms = await update.message.edit("`ᴛʀʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ....`")    
-    try:
-        custom_file_name = random_file_name(5)
-        down_file_name = "downloads" + "/" + str(update.from_user.id) + f"{custom_file_name}" + f"{media.file_name}"
-        path = await bot.download_media(message=file, file_name=down_file_name, progress=progress_for_pyrogram, progress_args=("ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ....", ms, time.time()))                    
-    except Exception as e:
-        return await ms.edit(e)
+     ms = await update.message.edit("`ᴛʀʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ....`")    
+     try:
+         custom_file_name = random_file_name(5)
+         down_file_name = "downloads" + "/" + str(update.from_user.id) + f"{custom_file_name}" + f"{media.file_name}"
+         path = await bot.download_media(message=file, file_name=down_file_name, progress=progress_for_pyrogram, progress_args=("ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ....", ms, time.time()))                    
+     except Exception as e:
+         return await ms.edit(e)
 
-    splitpath = path.split("/downloads/")
-    dow_file_name = splitpath[1]
-    old_file_name = f"downloads/{dow_file_name}"
-    os.rename(old_file_name, file_path)
+     splitpath = path.split("/downloads/")
+     dow_file_name = splitpath[1]
+     old_file_name = f"downloads/{dow_file_name}"
+     os.rename(old_file_name, file_path)
      	     
-    duration = 0
-    try:
-        parser = createParser(file_path)
-        metadata = extractMetadata(parser)
-        if metadata.has("duration"):
-            duration = metadata.get('duration').seconds
-        parser.close()
-    except:
-        pass
+     duration = 0
+     try:
+         parser = createParser(file_path)
+         metadata = extractMetadata(parser)
+         if metadata.has("duration"):
+             duration = metadata.get('duration').seconds
+         parser.close()
+     except:
+         pass
 	    
-    ph_path = None
-    media = getattr(file, file.media.value)
-    c_caption = await db.get_caption(update.message.chat.id)
-    c_thumb = await db.get_thumbnail(update.message.chat.id)
+     ph_path = None
+     media = getattr(file, file.media.value)
+     c_caption = await db.get_caption(update.message.chat.id)
+     c_thumb = await db.get_thumbnail(update.message.chat.id)
 
-    if c_caption:
-         try:
-             caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
-         except Exception as e:
-             await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
+     if c_caption:
+          try:
+              caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
+          except Exception as e:
+              await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
              return 
      else:
          caption = f"**{new_filename}**"
