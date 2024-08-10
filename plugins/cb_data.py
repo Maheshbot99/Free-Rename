@@ -1,4 +1,4 @@
-from helper.utils import progress_for_pyrogram, convert
+from helper.utils import progress_for_pyrogram, convert, random_file_name
 from pyrogram import Client, filters
 from pyrogram.types import (  InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from hachoir.metadata import extractMetadata
@@ -32,30 +32,36 @@ async def doc(bot,update):
      new_filename = new_name.split(":-")[1]
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
-     ms = await update.message.edit("**__ᴛʀyɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...__**")
-     c_time = time.time()
-     try:
-     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "**__ᴛʀyɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...__**",  ms, c_time   ))
-     except Exception as e:
-     	await ms.edit(e)
-     	return 
-     splitpath = path.split("/downloads/")
-     dow_file_name = splitpath[1]
-     old_file_name =f"downloads/{dow_file_name}"
-     os.rename(old_file_name,file_path)
-     duration = 0
-     try:
-        metadata = extractMetadata(createParser(file_path))
-        if metadata.has("duration"):
-           duration = metadata.get('duration').seconds
-     except:
-        pass
-     user_id = int(update.message.chat.id) 
-     ph_path = None 
      media = getattr(file, file.media.value)
-     c_caption = await db.get_caption(update.message.chat.id)
-     c_thumb = await db.get_thumbnail(update.message.chat.id)
-     if c_caption:
+     ms = await update.message.edit("`ᴛʀʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ....`")    
+    try:
+        custom_file_name = random_file_name(5)
+        down_file_name = "downloads" + "/" + str(update.from_user.id) + f"{custom_file_name}" + f"{media.file_name}"
+        path = await bot.download_media(message=file, file_name=down_file_name, progress=progress_for_pyrogram, progress_args=("ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ....", ms, time.time()))                    
+    except Exception as e:
+        return await ms.edit(e)
+
+    splitpath = path.split("/downloads/")
+    dow_file_name = splitpath[1]
+    old_file_name = f"downloads/{dow_file_name}"
+    os.rename(old_file_name, file_path)
+     	     
+    duration = 0
+    try:
+        parser = createParser(file_path)
+        metadata = extractMetadata(parser)
+        if metadata.has("duration"):
+            duration = metadata.get('duration').seconds
+        parser.close()
+    except:
+        pass
+	    
+    ph_path = None
+    media = getattr(file, file.media.value)
+    c_caption = await db.get_caption(update.message.chat.id)
+    c_thumb = await db.get_thumbnail(update.message.chat.id)
+
+    if c_caption:
          try:
              caption = c_caption.format(filename=new_filename, filesize=humanize.naturalsize(media.file_size), duration=convert(duration))
          except Exception as e:
