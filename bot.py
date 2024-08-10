@@ -3,16 +3,16 @@ from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT
 from aiohttp import web
 from route import web_server
 
-class Bot(Client):
-
+class bot(Client):
     def __init__(self):
-            api_id=API_ID,
-            api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
+        super().__init__(
+            name="tg-filerenamebot",
+            api_id=Config.API_ID,
+            api_hash=Config.API_HASH,
+            bot_token=Config.BOT_TOKEN,
             workers=200,
             plugins={"root": "plugins"},
-            sleep_threshold=15,
-        )
+            sleep_threshold=15)
 
     async def start(self):
         await super().start()
