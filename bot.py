@@ -3,7 +3,7 @@ from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT
 from aiohttp import web
 from route import web_server
 
-class bot(Client):
+class Bot(Client):
     def __init__(self):
         super().__init__(
             name="tg-filerenamebot",
